@@ -66,49 +66,10 @@ void test_case(){
     vector<int> s(n), t(n);
     for(auto &x:s) cin >> x;
     for(auto &x:t) cin >> x;
-    vector<vector<pair<int, int>>> g(n+1);
-    for(int i = 1; i <= n; i++){
-        g[0].push_back({i, t[i-1]});
-    }
-    for(int i = 1; i < n; i++){
-        g[i].push_back({i+1, s[i-1]});
-    }
-    g[n].push_back({1, s[n-1]});
-
-    vector<int> ans(n+1, inf);
-    ans[0] = 0;
-    set<pair<int, int>> bin;
-/*
-    for(int i = 0; i < g[0].size(); i++){
-        bin.insert({g[0][i].second, g[0][i].first});
-        ans[g[0][i].first] = g[0][i].second;
-    }
-*/
-    bin.insert({0, 0});
-    while(!bin.empty()){
-        auto it = bin.begin();
-        pair<int, int> p = *it;
-        int x = p.second;
-        bin.erase(it);
-       /* 
-        for(int i = 0; i < g[x].size(); i++){
-            int y = g[x][i].first, wt = g[x][i].second;
-            auto it = bin.find({ans[y], y});
-            if(it != bin.end()){
-                bin.erase(it);
-                ans[y] = min(ans[y], ans[x] + wt);
-                bin.insert({ans[y], y});
-            }
-        }*/
-        for(auto [y, w]: g[x]){
-            if(ans[y] > ans[x] + w){
-                ans[y] = ans[x] + w;
-                bin.insert({ans[y], y});
-            }
-        }
-    }
-
-    for(int i = 1; i <=n; i++) cout << ans[i] << endl;
+    vector<int> dp = t;
+    for(int i = 1; i < 2*n; i++)
+        dp[i%n] = min(dp[i%n], dp[(i-1)%n] + s[(i-1)%n]);
+    for(int i = 0; i < n; i++) cout << dp[i] << endl;
 }
 int32_t main(){
     ios::sync_with_stdio(0);
