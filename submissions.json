@@ -1,4 +1,20 @@
 {
+  "AC26631133": {
+    "contest_id": "abc223",
+    "language": "C++ (GCC 9.2.1)",
+    "path": "atcoder\\abc223\\B.cpp",
+    "platform": "AtCoder",
+    "problem_index": "B",
+    "problem_name": "String Shifting",
+    "problem_url": "https://atcoder.jp/contests/abc223/tasks/abc223_b",
+    "submission_id": "AC26631133",
+    "submission_url": "https://atcoder.jp/contests/abc223/submissions/26631133",
+    "tags": [
+      "AtCoder",
+      "*200"
+    ],
+    "timestamp": "Oct/17/2021 17:39"
+  },
   "AC26635026": {
     "contest_id": "abc223",
     "language": "C++ (GCC 9.2.1)",
