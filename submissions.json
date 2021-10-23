@@ -1,4 +1,20 @@
 {
+  "AC26758666": {
+    "contest_id": "abc224",
+    "language": "C++ (GCC 9.2.1)",
+    "path": "atcoder\\abc224\\B.cpp",
+    "platform": "AtCoder",
+    "problem_index": "B",
+    "problem_name": "Mongeness",
+    "problem_url": "https://atcoder.jp/contests/abc224/tasks/abc224_b",
+    "submission_id": "AC26758666",
+    "submission_url": "https://atcoder.jp/contests/abc224/submissions/26758666",
+    "tags": [
+      "AtCoder",
+      "*200"
+    ],
+    "timestamp": "Oct/23/2021 17:35"
+  },
   "AC26763382": {
     "contest_id": "abc224",
     "language": "C++ (GCC 9.2.1)",
