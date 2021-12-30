@@ -1,4 +1,21 @@
 {
+  "CF141159596": {
+    "contest_id": 1591,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces\\1591\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Minimize Distance",
+    "problem_url": "https://codeforces.com/contest/1591/problem/C",
+    "submission_id": "CF141159596",
+    "submission_url": "https://codeforces.com/contest/1591/submission/141159596",
+    "tags": [
+      "greedy",
+      "math",
+      "*1300"
+    ],
+    "timestamp": "Dec/30/2021 18:00"
+  },
   "CF141163526": {
     "contest_id": 1618,
     "language": "GNU C++17 (64)",
