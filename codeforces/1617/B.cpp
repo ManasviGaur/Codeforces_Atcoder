@@ -89,7 +89,7 @@ void solve(){
     }else{
         n--;
         for(int i = 3; i < n; i+=2){
-            if(gcd(i, n - i) == 1){
+            if(gcd(i, n - i) == 1 && n-i != i && n - i != 1){
                 cout << i << ' ' << n - i << ' ' << 1 << endl;
                 return;
             }
