@@ -1,4 +1,23 @@
 {
+  "CF142628903": {
+    "contest_id": 1623,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces\\1623\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Game on Ranges",
+    "problem_url": "https://codeforces.com/contest/1623/problem/B",
+    "submission_id": "CF142628903",
+    "submission_url": "https://codeforces.com/contest/1623/submission/142628903",
+    "tags": [
+      "brute force",
+      "dfs and similar",
+      "implementation",
+      "sortings",
+      "*1100"
+    ],
+    "timestamp": "Jan/13/2022 21:55"
+  },
   "CF144898393": {
     "contest_id": 1625,
     "language": "GNU C++17 (64)",
