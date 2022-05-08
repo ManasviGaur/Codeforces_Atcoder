@@ -1,4 +1,22 @@
 {
+  "CF156262429": {
+    "contest_id": 1670,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces\\1670\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Prof. Slim",
+    "problem_url": "https://codeforces.com/contest/1670/problem/A",
+    "submission_id": "CF156262429",
+    "submission_url": "https://codeforces.com/contest/1670/submission/156262429",
+    "tags": [
+      "greedy",
+      "implementation",
+      "sortings",
+      "*800"
+    ],
+    "timestamp": "May/08/2022 12:38"
+  },
   "CF156264158": {
     "contest_id": 1644,
     "language": "GNU C++17 (64)",
