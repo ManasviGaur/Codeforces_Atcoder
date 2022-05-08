@@ -1,4 +1,22 @@
 {
+  "CF156262215": {
+    "contest_id": 1670,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces\\1670\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Dorms War",
+    "problem_url": "https://codeforces.com/contest/1670/problem/B",
+    "submission_id": "CF156262215",
+    "submission_url": "https://codeforces.com/contest/1670/submission/156262215",
+    "tags": [
+      "brute force",
+      "implementation",
+      "strings",
+      "*1100"
+    ],
+    "timestamp": "May/08/2022 12:36"
+  },
   "CF156262429": {
     "contest_id": 1670,
     "language": "GNU C++17 (64)",
