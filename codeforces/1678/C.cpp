@@ -188,7 +188,7 @@ int32_t main(){
     cin >> test;
     for(int i = 1; i <= test; i++){
         //cout << "Case #" << i << ": ";
-        solve2();
+        solve();
     }
     // #ifndef ONLINE_JUDGE
     //     cerr << "Time elapsed: " << 1.0 * clock() / CLOCKS_PER_SEC << " s." << endl;
