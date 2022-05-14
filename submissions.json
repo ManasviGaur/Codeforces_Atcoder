@@ -1,4 +1,23 @@
 {
+  "CF157213477": {
+    "contest_id": 1680,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces\\1680\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Binary String",
+    "problem_url": "https://codeforces.com/contest/1680/problem/C",
+    "submission_id": "CF157213477",
+    "submission_url": "https://codeforces.com/contest/1680/submission/157213477",
+    "tags": [
+      "binary search",
+      "greedy",
+      "strings",
+      "two pointers",
+      "*1600"
+    ],
+    "timestamp": "May/14/2022 19:28"
+  },
   "CF157238220": {
     "contest_id": 1680,
     "language": "GNU C++17 (64)",
