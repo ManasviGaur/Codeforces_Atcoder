@@ -1,4 +1,22 @@
 {
+  "CF157238220": {
+    "contest_id": 1680,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces\\1680\\E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Moving Chips",
+    "problem_url": "https://codeforces.com/contest/1680/problem/E",
+    "submission_id": "CF157238220",
+    "submission_url": "https://codeforces.com/contest/1680/submission/157238220",
+    "tags": [
+      "bitmasks",
+      "dp",
+      "greedy",
+      "*2000"
+    ],
+    "timestamp": "May/14/2022 23:47"
+  },
   "CF157413832": {
     "contest_id": 1679,
     "language": "GNU C++17 (64)",
