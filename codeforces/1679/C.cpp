@@ -79,75 +79,18 @@ int mi(int x, int M) { return __pow(x,M-2, M);}
 bool sortbysec(const pair<int,int> &a,const pair<int,int> &b){return (a.second < b.second);}
 
 /******************************main*code******************************/
-
-class segTree{
-    vector<int> tree;
-    int val, n;
-public:
-    segTree(int _n, int _val){
-        n = _n;
-        val = _val;
-        tree.assign(2*n, 0);
-    }
-    segTree(vector<int> a, int val){
-        n = a.size();
-        tree.resize(2*n);
-        for(int i = 0; i < n; i++)
-            tree[i+n] = a[i];
-        for(int i = n-1; i > 0; i--){
-            tree[i] = todo(tree[2*i], tree[2*i + 1]);
-        }
-    }
-    int todo(int x, int y){ return (x + y);}
-    void update(int i, int newVal){
-        i += n;
-        tree[i] = newVal;
-        int curr;
-
-        while(i > 0){
-            i /= 2;
-            curr = todo(tree[2*i], tree[2*i+1]);
-
-            if(curr != tree[i]) tree[i] = curr;
-            else return;
-        }
-    }
-
-    int query(int from, int to){  // from is inclusive, to is exclusive
-        from += n;
-        to += n;
-        int curr = val;
-
-        while(from < to){
-            if(from & 1){
-                curr = todo(curr, tree[from]);
-                from++;
-            }
-            if(to&1){
-                to--;
-                curr = todo(curr, tree[to]);
-            }
-            from /= 2;
-            to /= 2;
-        }
-        return curr;
-    }
-
-};
-
-
-
+ 
 const int N = 2e5+1, inf = 1e17, M = 1e9 + 7;
 int test, n, m, k, query;
 
 void solve(){
     cin >> n >> query;
-    segTree row(n+1, 0), col(n+1, 0);
+    set<int> row, col;
     vector<int> r(n+1, 0),c(n+1, 0);
-    // for(int i= 1; i <= n; i++){
-    //     row.insert(i);
-    //     col.insert(i);
-    // }
+    for(int i= 1; i <= n; i++){
+        row.insert(i);
+        col.insert(i);
+    }
     while(query--){
         int t;
         cin >> t;
@@ -157,23 +100,23 @@ void solve(){
             r[x]++;
             c[y]++;
             if(r[x] == 1)
-                row.update(x, 1);
+                row.erase(row.find(x));
             if(c[y] == 1)
-                col.update(y, 1);
+                col.erase(col.find(y));
         }else if (t == 2){
             int x, y;
             cin >> x >> y;
             c[y]--;
             r[x]--;
             if(r[x] == 0)
-                row.update(x, 0);
+                row.insert(x);
             if(c[y] == 0)
-                col.update(y, 0);
+                col.insert(y);
         }else{
             int x1, y1, x2, y2;
             cin >> x1 >> y1 >> x2 >> y2;
-            if(row.query(x1, x2 + 1) == x2 - x1 + 1) yes;
-            else if(col.query(y1, y2 + 1) == y2 - y1 + 1) yes;
+            if(row.lower_bound(x1) == row.end() || *row.lower_bound(x1) > x2) yes;
+            else if(col.lower_bound(y1) == col.end() || *col.lower_bound(y1) > y2) yes;
             else no;
         }
     }
