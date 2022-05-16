@@ -80,17 +80,58 @@ bool sortbysec(const pair<int,int> &a,const pair<int,int> &b){return (a.second <
 
 /******************************main*code******************************/
  
+ class BIT{ //1-based indexing
+    int n, val;
+    //if todo = multiply, val should be 1, if todo = min(), val should be inf, if todo = add or max, val = 0
+    vector<int> bit;
+
+public:
+    BIT(int _n, int _val)
+    {
+        n = _n;
+        val = _val;
+        bit.assign(n + 1, val);
+    }
+    BIT(vector<int> a, int _val)
+    { // a should be in 1-based indexing
+        n = a.size() - 1;
+        val = _val;
+        bit = a;
+        for (int i = 1; i <= n; i++)
+        {
+            int p = i + (i & -i); //index to parent
+            if (p <= n)
+                bit[p] = todo(bit[p], bit[i]);
+        }
+    }
+    int todo(int a, int b) { return (a + b); }
+    void update(int i, int delta)
+    { //if todo is addition, delta = new val - old val
+
+        for (; i <= n; i += (i & -i))
+        {
+            bit[i] = todo(bit[i], delta);
+        }
+    }
+    
+    int get(int i)
+    {
+        int res = val;
+        for (; i; i -= (i & -i))
+        {
+            res = todo(res, bit[i]);
+        }
+        return res;
+    }
+};
+
 const int N = 2e5+1, inf = 1e17, M = 1e9 + 7;
 int test, n, m, k, query;
 
 void solve(){
     cin >> n >> query;
-    set<int> row, col;
-    vector<int> r(n+1, 0),c(n+1, 0);
-    for(int i= 1; i <= n; i++){
-        row.insert(i);
-        col.insert(i);
-    }
+    BIT row(n, 0), col(n, 0);
+    vector<int> r(n+1, 0), c(n+1, 0);
     while(query--){
         int t;
         cin >> t;
@@ -99,24 +140,24 @@ void solve(){
             cin >> x >> y;
             r[x]++;
             c[y]++;
-            if(r[x] == 1)
-                row.erase(row.find(x));
-            if(c[y] == 1)
-                col.erase(col.find(y));
+            if(row.get(x) - row.get(x-1) == 0)
+                row.update(x, 1);
+            if(col.get(y) - col.get(y-1) == 0)
+                col.update(y, 1);
         }else if (t == 2){
             int x, y;
             cin >> x >> y;
             c[y]--;
             r[x]--;
             if(r[x] == 0)
-                row.insert(x);
+                row.update(x, -1);
             if(c[y] == 0)
-                col.insert(y);
+                col.update(y, -1);
         }else{
             int x1, y1, x2, y2;
             cin >> x1 >> y1 >> x2 >> y2;
-            if(row.lower_bound(x1) == row.end() || *row.lower_bound(x1) > x2) yes;
-            else if(col.lower_bound(y1) == col.end() || *col.lower_bound(y1) > y2) yes;
+            if(row.get(x2) - row.get(x1 - 1) == x2 - x1 + 1) yes;
+            else if(col.get(y2) - col.get(y1 - 1) == y2 - y1 + 1) yes;
             else no;
         }
     }
