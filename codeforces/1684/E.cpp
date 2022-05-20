@@ -6,8 +6,6 @@
 
 using namespace std;
 
-#define int long long
-
 int test, n, m, k;
 int cost(map<int, int> freq){
   int mx = 0, diff = 0;
@@ -80,10 +78,6 @@ void solve(){
     cin >> n >> k;
     vector<int> a(n);
     for(int &i:a) cin >> i;
-    if(n <= k){
-      cout << 0 << endl;
-      return;
-    }
     sort(a.begin(), a.end());
     
     for(int i: a) freq[i]++;
