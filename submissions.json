@@ -1,4 +1,23 @@
 {
+  "CF157933967": {
+    "contest_id": 1672,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces\\1672\\E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "notepad.exe",
+    "problem_url": "https://codeforces.com/contest/1672/problem/E",
+    "submission_id": "CF157933967",
+    "submission_url": "https://codeforces.com/contest/1672/submission/157933967",
+    "tags": [
+      "binary search",
+      "constructive algorithms",
+      "greedy",
+      "interactive",
+      "*2200"
+    ],
+    "timestamp": "May/22/2022 00:08"
+  },
   "CF157934464": {
     "contest_id": 1672,
     "language": "GNU C++17 (64)",
