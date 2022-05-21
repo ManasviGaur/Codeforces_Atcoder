@@ -1,4 +1,22 @@
 {
+  "CF157929235": {
+    "contest_id": 1672,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces\\1672\\F1.cpp",
+    "platform": "Codeforces",
+    "problem_index": "F1",
+    "problem_name": "Array Shuffling",
+    "problem_url": "https://codeforces.com/contest/1672/problem/F1",
+    "submission_id": "CF157929235",
+    "submission_url": "https://codeforces.com/contest/1672/submission/157929235",
+    "tags": [
+      "constructive algorithms",
+      "graphs",
+      "greedy",
+      "*2000"
+    ],
+    "timestamp": "May/21/2022 23:10"
+  },
   "CF157933967": {
     "contest_id": 1672,
     "language": "GNU C++17 (64)",
