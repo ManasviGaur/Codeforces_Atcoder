@@ -1,4 +1,21 @@
 {
+  "CF158184261": {
+    "contest_id": 1681,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces\\1681\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Double Sort",
+    "problem_url": "https://codeforces.com/contest/1681/problem/C",
+    "submission_id": "CF158184261",
+    "submission_url": "https://codeforces.com/contest/1681/submission/158184261",
+    "tags": [
+      "implementation",
+      "sortings",
+      "*1200"
+    ],
+    "timestamp": "May/23/2022 20:41"
+  },
   "CF158217092": {
     "contest_id": 1681,
     "language": "GNU C++17 (64)",
