@@ -1,4 +1,21 @@
 {
+  "CF158166642": {
+    "contest_id": 1681,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces\\1681\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Card Trick",
+    "problem_url": "https://codeforces.com/contest/1681/problem/B",
+    "submission_id": "CF158166642",
+    "submission_url": "https://codeforces.com/contest/1681/submission/158166642",
+    "tags": [
+      "implementation",
+      "math",
+      "*800"
+    ],
+    "timestamp": "May/23/2022 20:19"
+  },
   "CF158184261": {
     "contest_id": 1681,
     "language": "GNU C++17 (64)",
