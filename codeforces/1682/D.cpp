@@ -87,31 +87,42 @@ void solve(){
     string s;
     cin >> s;
     int edg = 0;
+    vector<int> cnt(n, 0);
     for(int i = 0; i < n; i++){
         if(s[i] == '0'){
+            cnt[i] = 2;
             edg += 2;
         }else{
+            cnt[i] = 1;
             edg += 1;
         }
     }
-    if((edg&1) || edg == 2*n){
+    if(edg&1){
         no;
         return;
     }
-
-    yes;  
+    edg /= 2;
+    if(edg == n){
+        no;
+        return;
+    }
+    yes;
+    
     int i = 1;
-    for(; i < n; i++) if(s[i-1] == '1') break;
+    for(; i < n; i++) if(cnt[i-1] == 1) break;
     vector<pair<int, int>> ans;
     bool nw = true;
     for(int j = (i+1)%n; j != i; j = (j+1)%n){
-        if(nw) ans.pb({i, j});
         if(s[j] == '1'){
+            if(nw){
+                ans.pb({i, j});
+            }
             nw = true;
-        }else{
-            ans.pb({j, (j+1)%n});
-            nw = false;
+            continue;
         }
+        if(nw) ans.pb({i, j});
+        ans.pb({j, (j+1)%n});
+        nw = false;
     }
 
     for(auto p: ans){
