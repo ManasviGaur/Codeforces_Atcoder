@@ -1,4 +1,20 @@
 {
+  "AC32218374": {
+    "contest_id": "abc254",
+    "language": "C++ (GCC 9.2.1)",
+    "path": "atcoder\\abc254\\C.cpp",
+    "platform": "AtCoder",
+    "problem_index": "C",
+    "problem_name": "K Swap",
+    "problem_url": "https://atcoder.jp/contests/abc254/tasks/abc254_c",
+    "submission_id": "AC32218374",
+    "submission_url": "https://atcoder.jp/contests/abc254/submissions/32218374",
+    "tags": [
+      "AtCoder",
+      "*300"
+    ],
+    "timestamp": "Jun/04/2022 17:52"
+  },
   "AC32238399": {
     "contest_id": "abc254",
     "language": "C++ (GCC 9.2.1)",
