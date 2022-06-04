@@ -6,15 +6,17 @@ Submissions
 
 A repository to keep track of problem solving practice, containing solutions from platforms:
 * Codeforces &nbsp; [![Codeforces](https://run.kaist.ac.kr/badges/codeforces/manasvi200.svg)](https://codeforces.com/profile/manasvi200)
+* AtCoder &nbsp; [![AtCoder](https://run.kaist.ac.kr/badges/atcoder/Manasvi200.svg)](https://atcoder.jp/users/Manasvi200)
 
 
 ## Contents
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-115 | [G - Count the Trains](https://codeforces.com/contest/1690/problem/G) | [GNU C++20 (64)](./codeforces/1690/G.cpp) | `binary search` `data structures` `greedy` `sortings` `*2000` | Jun/07/2022 22:31 | 
-114 | [C - Line Empire](https://codeforces.com/contest/1659/problem/C) | [GNU C++20 (64)](./codeforces/1659/C.cpp) | `binary search` `brute force` `dp` `greedy` `implementation` `math` `*1500` | Jun/06/2022 23:57 | 
-113 | [A - Red Versus Blue](https://codeforces.com/contest/1659/problem/A) | [GNU C++20 (64)](./codeforces/1659/A.cpp) | `constructive algorithms` `greedy` `implementation` `math` `*1000` | Jun/06/2022 22:29 | 
+116 | [G - Count the Trains](https://codeforces.com/contest/1690/problem/G) | [GNU C++20 (64)](./codeforces/1690/G.cpp) | `binary search` `data structures` `greedy` `sortings` `*2000` | Jun/07/2022 22:31 | 
+115 | [C - Line Empire](https://codeforces.com/contest/1659/problem/C) | [GNU C++20 (64)](./codeforces/1659/C.cpp) | `binary search` `brute force` `dp` `greedy` `implementation` `math` `*1500` | Jun/06/2022 23:57 | 
+114 | [A - Red Versus Blue](https://codeforces.com/contest/1659/problem/A) | [GNU C++20 (64)](./codeforces/1659/A.cpp) | `constructive algorithms` `greedy` `implementation` `math` `*1000` | Jun/06/2022 22:29 | 
+113 | [E - Small d and k](https://atcoder.jp/contests/abc254/tasks/abc254_e) | [C++ (GCC 9.2.1)](./atcoder/abc254/E.cpp) | `AtCoder` `*500` | Jun/04/2022 19:09 | 
 112 | [F1 - Promising String (easy version)](https://codeforces.com/contest/1660/problem/F1) | [GNU C++20 (64)](./codeforces/1660/F1.cpp) | `brute force` `implementation` `math` `strings` `*1700` | Jun/03/2022 17:43 | 
 111 | [E - Matrix and Shifts](https://codeforces.com/contest/1660/problem/E) | [GNU C++20 (64)](./codeforces/1660/E.cpp) | `brute force` `constructive algorithms` `greedy` `implementation` `*1600` | Jun/02/2022 23:53 | 
 110 | [D - Maximum Product Strikes Back](https://codeforces.com/contest/1660/problem/D) | [GNU C++20 (64)](./codeforces/1660/D.cpp) | `brute force` `implementation` `math` `two pointers` `*1600` | Jun/02/2022 23:19 | 
@@ -32,7 +34,7 @@ A repository to keep track of problem solving practice, containing solutions fro
 98 | [C - LIS or Reverse LIS?](https://codeforces.com/contest/1682/problem/C) | [GNU C++20 (64)](./codeforces/1682/C.cpp) | `constructive algorithms` `greedy` `implementation` `math` `*1400` | May/24/2022 23:16 | 
 97 | [B - AND Sorting](https://codeforces.com/contest/1682/problem/B) | [GNU C++20 (64)](./codeforces/1682/B.cpp) | `bitmasks` `constructive algorithms` `sortings` `*1100` | May/24/2022 21:55 | 
 96 | [A - Palindromic Indices](https://codeforces.com/contest/1682/problem/A) | [GNU C++20 (64)](./codeforces/1682/A.cpp) | `greedy` `strings` `*800` | May/24/2022 21:46 | 
-95 | [A - Elephant](https://codeforces.com/contest/617/problem/A) | [PyPy 3-64](./codeforces/617/A.py) | `math` `*800` | May/24/2022 16:51 | 
+95 | [A - Elephant](https://codeforces.com/contest/617/problem/A) | [Python 3](./codeforces/617/A.py) | `math` `*800` | May/24/2022 16:51 | 
 94 | [D - Required Length](https://codeforces.com/contest/1681/problem/D) | [GNU C++17 (64)](./codeforces/1681/D.cpp) | `brute force` `dfs and similar` `dp` `hashing` `shortest paths` `*1700` | May/23/2022 21:48 | 
 93 | [C - Double Sort](https://codeforces.com/contest/1681/problem/C) | [GNU C++17 (64)](./codeforces/1681/C.cpp) | `implementation` `sortings` `*1200` | May/23/2022 20:41 | 
 92 | [B - Card Trick](https://codeforces.com/contest/1681/problem/B) | [GNU C++17 (64)](./codeforces/1681/B.cpp) | `implementation` `math` `*800` | May/23/2022 20:19 | 
@@ -57,8 +59,8 @@ A repository to keep track of problem solving practice, containing solutions fro
 73 | [E - Tokitsukaze and Two Colorful Tapes](https://codeforces.com/contest/1678/problem/E) | [GNU C++17 (64)](./codeforces/1678/E.cpp) | `constructive algorithms` `dfs and similar` `dsu` `greedy` `math` `*1900` | May/13/2022 00:52 | 
 72 | [D - Tokitsukaze and Meeting](https://codeforces.com/contest/1678/problem/D) | [GNU C++17 (64)](./codeforces/1678/D.cpp) | `dp` `implementation` `*1700` | May/13/2022 00:08 | 
 71 | [C - Tokitsukaze and Strange Inequality](https://codeforces.com/contest/1678/problem/C) | [GNU C++17 (64)](./codeforces/1678/C.cpp) | `brute force` `data structures` `*1600` | May/12/2022 22:26 | 
-70 | [H1 - Maximum Crossings (Easy Version)](https://codeforces.com/contest/1676/problem/H1) | [GNU C++17 (64)](./codeforces/1676/H1.cpp) | `brute force` `*1400` | May/12/2022 18:49 | 
-69 | [H2 - Maximum Crossings (Hard Version)](https://codeforces.com/contest/1676/problem/H2) | [GNU C++17 (64)](./codeforces/1676/H2.cpp) | `data structures` `divide and conquer` `sortings` `*1500` | May/12/2022 18:49 | 
+70 | [H2 - Maximum Crossings (Hard Version)](https://codeforces.com/contest/1676/problem/H2) | [GNU C++17 (64)](./codeforces/1676/H2.cpp) | `data structures` `divide and conquer` `sortings` `*1500` | May/12/2022 18:49 | 
+69 | [H1 - Maximum Crossings (Easy Version)](https://codeforces.com/contest/1676/problem/H1) | [GNU C++17 (64)](./codeforces/1676/H1.cpp) | `brute force` `*1400` | May/12/2022 18:49 | 
 68 | [E - Messages](https://codeforces.com/contest/1612/problem/E) | [GNU C++17 (64)](./codeforces/1612/E.cpp) | `brute force` `dp` `greedy` `probabilities` `sortings` `*2000` | May/12/2022 00:39 | 
 67 | [D - X-Magic Pair](https://codeforces.com/contest/1612/problem/D) | [GNU C++17 (64)](./codeforces/1612/D.cpp) | `math` `number theory` `*1600` | May/11/2022 23:41 | 
 66 | [C - Chat Ban](https://codeforces.com/contest/1612/problem/C) | [GNU C++17 (64)](./codeforces/1612/C.cpp) | `binary search` `math` `*1300` | May/11/2022 23:07 | 
