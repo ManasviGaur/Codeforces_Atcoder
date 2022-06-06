@@ -12,4 +12,5 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-1 | [G - Count the Trains](https://codeforces.com/contest/1690/problem/G) | [GNU C++20 (64)](./codeforces/1690/G.cpp) | `binary search` `data structures` `greedy` `sortings` `*2000` | Jun/07/2022 22:31 | 
+2 | [G - Count the Trains](https://codeforces.com/contest/1690/problem/G) | [GNU C++20 (64)](./codeforces/1690/G.cpp) | `binary search` `data structures` `greedy` `sortings` `*2000` | Jun/07/2022 22:31 | 
+1 | [C - Line Empire](https://codeforces.com/contest/1659/problem/C) | [GNU C++20 (64)](./codeforces/1659/C.cpp) | `binary search` `brute force` `dp` `greedy` `implementation` `math` `*1500` | Jun/06/2022 23:57 | 
